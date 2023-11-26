@@ -12,54 +12,57 @@ nav ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    margin: 0; 
+    margin: 0;
     background: #495e57;
-}   
+}
 
 nav li {
     display: inline-block;
 }
 
 nav a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
 }
 
 @media all and (max-width: 800px) {
-  nav ul {
-    justify-content: space-around;
-  }
+    nav ul {
+        justify-content: space-around;
+    }
 }
 
 @media all and (max-width: 600px) {
-  nav ul {
-    flex-flow: column wrap;
-    padding: 0;
-  }
-  nav a { 
-    text-align: center; 
-    padding: 10px;
-    border-top: 1px solid rgba(255, 255, 255,0.3); 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-  }
-  nav li:last-of-type a {
-    border-bottom: none;
-  }
+    nav ul {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    nav li:last-of-type a {
+        border-bottom: none;
+    }
 }
 
 header {
     margin: 1em
 }
 
-header > img {
+header>img {
     display: block;
-    max-width: 50%;    
+    max-width: 50%;
     margin: 0 auto;
 }
 
-main, footer {
+main,
+footer {
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 5%;
@@ -89,7 +92,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
-margin:0;
+    margin: 0;
 }
 
 /* HOME STYLES */
@@ -98,7 +101,7 @@ margin:0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap:3em;
+    column-gap: 3em;
     row-gap: 1em;
 }
 
@@ -108,7 +111,7 @@ margin:0;
 }
 
 .home h2 {
-text-align: center;
+    text-align: center;
 }
 
 .home .highlight {
@@ -132,7 +135,7 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    gap:1em;
+    gap: 1em;
 }
 
 .menu article {
@@ -142,7 +145,7 @@ text-align: center;
 
 /* BOOKING  STYLES*/
 .booking form div {
-margin: 1em;
+    margin: 1em;
 }
 
 /* CONTACT STYLES */
@@ -151,5 +154,5 @@ margin: 1em;
 }
 
 .contact form div {
-margin: 1em;
+    margin: 1em;
 }
