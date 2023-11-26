@@ -1,2 +1,3 @@
 # sampleProject
-sample html project
+
+Just messing around css flex properties
