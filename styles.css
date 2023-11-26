@@ -1,0 +1,155 @@
+/* GLOBAL STYLES */
+
+body {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 0; 
+    background: #495e57;
+}   
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+@media all and (max-width: 800px) {
+  nav ul {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  nav ul {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  nav a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  nav li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+header {
+    margin: 1em
+}
+
+header > img {
+    display: block;
+    max-width: 50%;    
+    margin: 0 auto;
+}
+
+main, footer {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+footer {
+    display: flex;
+    align-items: baseline;
+}
+
+footer div:first-child {
+    flex: 1;
+}
+
+footer div {
+    flex: 2;
+}
+
+footer img {
+    max-width: 5em;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+margin:0;
+}
+
+/* HOME STYLES */
+
+.home section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap:3em;
+    row-gap: 1em;
+}
+
+.home article {
+    flex: 1;
+    text-align: justify;
+}
+
+.home h2 {
+text-align: center;
+}
+
+.home .highlight {
+    flex: 1 100%;
+    text-align: left;
+    padding: 3%;
+    color: white;
+}
+
+.home .highlight h2 {
+    text-align: left;
+}
+
+.home img {
+    max-width: 100%;
+}
+
+/* MENU STYLES */
+
+.menu section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap:1em;
+}
+
+.menu article {
+    flex: 49%;
+    text-align: left;
+}
+
+/* BOOKING  STYLES*/
+.booking form div {
+margin: 1em;
+}
+
+/* CONTACT STYLES */
+.contact textarea {
+    display: block;
+}
+
+.contact form div {
+margin: 1em;
+}
